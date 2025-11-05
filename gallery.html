@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fanart Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <h1>팬아트 갤러리</h1>
+
+  <div id="auth-box">
+    <input id="email" type="email" placeholder="이메일" />
+    <input id="password" type="password" placeholder="비밀번호" />
+    <button id="signup-btn">회원가입</button>
+    <button id="login-btn">로그인</button>
+    <button id="logout-btn" style="display:none;">로그아웃</button>
+  </div>
+
+  <div id="upload-box" style="display:none;">
+    <input type="file" id="file-input" />
+    <button id="upload-btn">업로드</button>
+  </div>
+
+  <div id="gallery"></div>
+
+  <div id="lightbox" style="display:none;">
+    <img id="lightbox-img">
+  </div>
+
+  <script>
+    window.SUPABASE_URL = "https://aspajcpnwzybevswxphx.supabase.co";
+    window.SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFzcGFqY3Bud3p5YmV2c3d4cGh4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIzMTY5ODIsImV4cCI6MjA3Nzg5Mjk4Mn0.LMMoLrzwClDz9jWTfR5pCNPTTIpTPc3iJ3UBiHxCqlk";
+  </script>
+</body>
+</html>
